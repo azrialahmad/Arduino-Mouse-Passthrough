@@ -57,9 +57,7 @@ void loop()
         accumulatedWheel = 0;
         moveNeeded = false;
     }
-    
-    // Minimal delay to prevent CPU hogging - reduced for lower latency
-    delayMicroseconds(50);
+
 }
 
 void MouseRptParser::Parse(USBHID *hid, bool is_rpt_id, uint8_t len, uint8_t *buf)
